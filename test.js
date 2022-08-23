@@ -89,6 +89,125 @@ function firsFunction (myFriend, whatHeDo, whereHeDoThat) {
 console.log(firsFunction('Nowak','runing','shopcenter'));
 
 
+// yep thats time to know list or array in JS !! i remember when i understand list in python my lerning skils up immediately.
+
+var mylist = [12,44,54,32]
+
+console.log(mylist[0])
+
+// .appendet() function bot here we use .push() wery similar 
+
+
+var yoursArrey = [123,'siuras', 13]
+
+console.log(yoursArrey)
+
+yoursArrey.push(69,420,2137) // wery nice and slim 
+
+console.log(yoursArrey)
+
+
+// some .pop() function in python we have .delete() orrrr .pop() as well :)) 
+
+
+var myTeacherArrey = [1,4,2,3,3,6,3]
+
+myTeacherArrey.pop()
+
+console.log(myTeacherArrey)
+
+// oki naw dude show .shift() function, this one remove first item from the list
+// and unshift() put some shit in front odf aour list. 
+
+
+// in this part dude show me how to use function but meeeen, it wos so incomprehensible xD like wtf is that hhahahaahhaha: 
+
+/* 
+var myGlobal = 10;
+
+function fun1() {
+    oppsGlobal = 5;
+}
+
+function fun2() {
+    var output = "";
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+
+    if (typeof oppsGlobal != "undefined") {
+        output += "oopsGlobal:" + oopsGlobal;
+    }
+
+    console.log(output);
+}
+
+    xDDDDDDDDDDDDDDDDDDDD
+
+    let me understood it by my self (y)
+
+
+*/
+
+var global1 = 5;
+var global2 = 10;
+var global3 = 20;
+
+
+function fun1(a) {
+    if (a = global1) {
+        console.log("output = 5");
+    }
+
+    if ( a = global2) {
+        console.log("output = 10")
+    }
+
+    else {
+        console.log("output != 5");
+    }
+
+}
+
+fun1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
