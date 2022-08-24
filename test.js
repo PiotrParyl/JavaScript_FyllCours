@@ -270,11 +270,37 @@ function printEndSemestMark(mark) {
 console.log(printEndSemestMark(5))
 
 
+// its time to know how to create Objects in JS, is look like objects in JS are like dict in python, loook bro
+
+
+var namePlayer = {
+    "name" : "maczo1928",
+    "race" : "elf",
+    "hp": 79,
+    "lvl": 69,
+}
 
 
 
+console.log(namePlayer.name, namePlayer.hp)
+console.log(namePlayer["name"], namePlayer["hp"])
 
 
+
+// YEEEEEEEEEEEEEEE some loops now, finally we can make som more complikate programs <333
+
+
+var loopNumber = 0;
+var loop_list = []
+
+while (loopNumber < 5) {
+    loopNumber ++;
+    loop_list.push(loopNumber);
+    console.log(loopNumber);
+}
+
+
+console.log(loop_list);
 
 
 
