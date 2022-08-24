@@ -171,19 +171,103 @@ function fun1(a) {
 
 fun1();
 
+// Enodher day lerning JavaScript Yeeeeeeeeeeeeeeeeeeeeeeeeee
+console.log("--------new day(2)-------")
+
+var startNumber = 0;
+
+function addToNumber(num) {
+    return (num + 5) /2;
+}
+
+console.log(startNumber = addToNumber(5));
+
+
+// oke now i have to del first item from the list and next add any number (69)
+
+var test_list = [2137,2,3,4,5,6,7]
+
+ function delFirstItem(list,intex) {
+    list.push(intex)
+
+    return list.shift();
+
+ }
 
 
 
 
+console.log( `List before: ${test_list}`)
+console.log(`delete item: ${delFirstItem(test_list,13)}`)
+console.log(`New list: ${JSON.stringify(test_list)}`) // oke it is some think like this yo yo 
+
+
+// it time to True and False, the bool statement, aaaaand if/else (in python oc)
 
 
 
+function isThisTrue(someBool) {
+    if (someBool) {
+        return "yest it is True";
+    }
+    return "Naaah it is not :/"
+}
+
+
+console.log(isThisTrue(false));
+
+
+function checkNumber(number) {
+
+    if (number == 10) {
+        return "yooo number = 10"
+    }
+    return "Nah number != 10"
+}
+
+console.log(checkNumber(10));
+
+
+// if and else, let's gooooo 
+
+function ifNumber(num) {
+    if (num > 5 ) {
+        return `number is bigger then 5`;
+    } else {
+        return `number is smaller then 5 `
+    }
+}
+
+console.log(ifNumber(2)) // So far i'm preeti confuse how much python helps me in lernint JavaScript WOOOW
 
 
 
+// its time to something new, 'case' it somethink like if statement but much simpler
 
 
+function printEndSemestMark(mark) {
+    var anser = "";
+    switch(mark){
+        case 1:
+            anser = "Niezdane";
+            break;
+        case 2:
+            anser = "Dwoje, ale zdane";
+            break;
+        case 3:
+            anser="Trujeczka,może być";
+            break;
+        case 4:
+            anser="Czwureczka, ładnie"
+            break;
+        case 5:
+            anser="Kuuurwa ale ładna piąteczka"
+            break;
+        }
+    return anser;
+}
 
+console.log(printEndSemestMark(5))
 
 
 
