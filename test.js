@@ -303,26 +303,178 @@ while (loopNumber < 5) {
 console.log(loop_list);
 
 
+// Enodher day lerning JavaScript Yeeeeeeeeeeeeeeeeeeeeeeeeee
+console.log("--------new day(3)-------")
+
+
+var mylist2 = [];
+
+for (var i = 0; i <= 10; i++ ) {
+     mylist2.push(i);
+}
+
+console.log(mylist2)
 
 
 
 
+for (var i = 0; i <= 10; i++) {
+    console.log(mylist2[i])
+}
+
+
+var str_list = ['kasia','basia','paweł','dupa']
+
+for (var i=0;i<str_list.length;i++) {
+
+    console.log(str_list[i])
+
+}
+
+// here i tray to print something when for loop will be == [smt]
+
+
+// multiple for loops use when we have list in list  
+
+
+function prinValueInArr(my_list) {
+    var  test_number = 1;
+
+
+    for (var i=0; i<my_list.length; i++) {
+        for (var j=0; j < my_list[i].length; j++) {
+            test_number *= my_list[i][j];
+            
+        }
+    }
+    return test_number;
+}
+
+var test_number = prinValueInArr([[1,2,3],[4,5],[6,7,8]]);
+
+console.log(test_number); // Whay this one dont wor ?? Ok on test2.js file this function work fine lol
 
 
 
+// do while looks weird, so it firs go through the loop and then check the condition, hmmmm 
+
+var enodherArr = [];
+var i = 10;
+
+do {
+    enodherArr.push(i);
+    i ++;
+} while ( i<5)
+
+console.log(i,enodherArr);
+
+// now its time to work with some object (dick in python) and for loops, looks nice
+
+
+var players = [
+    
+    {
+        'nickname':'maczo1928',
+        'lvl':69,
+        'guild':'paladyn',
+    
+    },
+    {
+        'nickname':'dupek112',
+        'lvl':12,
+        'guild':'kapłan',
+        
+    },
+    {
+        'nickname':'siurek2137',
+        'lvl':44,
+        'guild':'złodziej',
+        
+    },
+];
+
+
+function describlePlayer (name, prop) {
+
+    for (var i=0;i< players.length;i++ ) {
+        if(players[i].nickname === name) {
+            return players[i][prop] || "no such property";
+        }
+
+    }
+    return "no such content"
+
+}
+
+
+var data = describlePlayer("maczo1928",'guild')
+
+console.log(data) // This shit is cooool af, as soon i finish this cours i start make simple RPG console game in web. 
 
 
 
+function randomNumber() {
 
+    return Math.random();
+}
 
+console.log(randomNumber())
 
+// to get random whole number you have to use Math.floor() method
 
+function randomWholeNumber(x) {
 
+    return Math.floor(Math.random() * x)
+}
 
+console.log(randomWholeNumber(100));
+  
 
+// in JavaScript to get random int it looks rili complicated, in python we use wery simple functrion, randint(x,y), and thas it !!!
+
+function randomNumberBetween(min,max) {
+
+    return Math.floor(Math.random() * (max-min+1)) + min; // right now ? this line is so misunderstanding
+}
+
+console.log(randomNumberBetween(10,100));
 
 
  
+// convert str to int 
+
+function convertStr(str) {
+    return parseInt(str);
+}
 
 
+// confer binary number to normal number
 
+function convertBinary(str) {
+    return parseInt(str,2)
+}
+
+var decimalNumber = convertBinary("1000101");
+
+console.log(decimalNumber)
+
+
+// Ulalaaa what is that --> "?" <-- thiiis is ternar operator
+
+function checkIfEqual(a,b) {
+    
+    return a === b ? true:false;
+
+}
+
+console.log(checkIfEqual(4,3)); // okej i see some petential in this method wow
+
+
+function checkNegativeOrNot(num) {
+
+    return num > 0 ? "Positiv" : num < 0 ? "negativ" : "zero"
+
+}
+
+
+console.log(checkNegativeOrNot(0))

@@ -1,7 +1,5 @@
-a = 2.3
+import random
 
-b = 5 
 
-c = a + b
 
-print (c)
+print(random.randint(1,10))
