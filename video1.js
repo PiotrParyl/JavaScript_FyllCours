@@ -1,4 +1,8 @@
 
+// video1: https://www.youtube.com/watch?v=PkZNo7MFNFg&t=8516s&ab_channel=freeCodeCamp.org
+
+
+
 // first comment
 console.log("Hello JS")
 
@@ -478,3 +482,38 @@ function checkNegativeOrNot(num) {
 
 
 console.log(checkNegativeOrNot(0))
+
+
+// Enodher day lerning JavaScript Yeeeeeeeeeeeeeeeeeeeeeeeeee
+console.log("--------new day(4)-------")
+
+
+// Arrow Functions 
+
+
+var testArrowfunction = function() {
+
+    return "yoo to działa"
+
+};
+
+console.log(testArrowfunction())
+
+// this new function
+
+var yoyoArrow = () => "To też dizał";
+
+console.log(yoyoArrow())
+
+
+var intList = [1,2,3,4,5];
+
+var printIntList = function(list) {
+
+    for (var i=0; i<intList.length;i++) {
+        console.log(intList[i]);
+    }
+}
+
+printIntList(intList)
+
